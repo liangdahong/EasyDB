@@ -43,10 +43,10 @@ extension EasyDBService: EasyDB.EasyDBService {
             tables.forEach {
                 let sql =
                 """
-                CREATE TABLE IF NOT EXISTS \($0.tableName)(
-                id integer NOT NULL UNIQUE,
+                create table if not exists \($0.tableName)(
+                id integer not null unique,
                 data text,
-                PRIMARY KEY (id));
+                primary key (id));
                 """
                 if db.executeStatements(sql) {
                     debugPrint("创建表 \($0.tableName) 成功")
