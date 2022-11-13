@@ -24,9 +24,9 @@ final class WOADB {
         } else {
             let db = EasyDBService("\(NSHomeDirectory())/Documents/\(account).db")
             db.creatTable([
-                UserInfoTable0.self,
-                UserInfoTable1.self,
-                UserInfoTable2.self,
+                UserInfoTable.self,
+                MessageTable.self,
+                UserInfoTableString.self,
                 UserInfoTableInt.self,
                 UserInfoTableInt64.self
             ])

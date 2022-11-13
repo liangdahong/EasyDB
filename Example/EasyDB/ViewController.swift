@@ -21,31 +21,31 @@ class ViewController: UIViewController {
         
         let alert = UIAlertController(title: "切换数据库", message: nil, preferredStyle: .alert)
         
-        alert.addAction(.init(title: "\(UserInfoTable0.self) 保存数据", style: .default, handler: { (_) in
+        alert.addAction(.init(title: "\(UserInfoTable.self) 保存数据", style: .default, handler: { (_) in
             (1...100).forEach { _ in
                 DispatchQueue.global().async {
-                    WOADB.current?.insert(table: UserInfoTable0.self, id: 0, model: .init(id: 0, name: "哈哈\(Date().description)"))
-                    WOADB.current?.insert(table: UserInfoTable2.self, id: Int64(arc4random()), model: "\(Date().description)")
+                    WOADB.current?.insert(table: UserInfoTable.self, id: 0, model: .init(id: 0, name: "哈哈\(Date().description)"))
+                    WOADB.current?.insert(table: UserInfoTableString.self, id: Int64(arc4random()), model: "\(Date().description)")
                     WOADB.current?.insert(table: UserInfoTableInt.self, id: Int64(arc4random()), model: Int(arc4random()))
                     WOADB.current?.insert(table: UserInfoTableInt64.self, id: Int64(arc4random()), model: Int64(arc4random()))
                 }
             }
         }))
         
-        alert.addAction(.init(title: "\(UserInfoTable0.self) 查询数据", style: .default, handler: { (_) in
-            if let data = WOADB.current?.query(table: UserInfoTable0.self, id: 0) {
+        alert.addAction(.init(title: "\(UserInfoTable.self) 查询数据", style: .default, handler: { (_) in
+            if let data = WOADB.current?.query(table: UserInfoTable.self, id: 0) {
                 SVProgressHUD.showSuccess(withStatus: "\(data.id) \(data.name)")
             } else {
                 SVProgressHUD.showSuccess(withStatus: "没有查询到数据")
             }
         }))
         
-        alert.addAction(.init(title: "\(UserInfoTable1.self) 保存数据", style: .default, handler: { (_) in
-            WOADB.current?.insert(table: UserInfoTable1.self, id: 0, model: .init(tag: 1, arr: ["\(Date().description)","\(Date().description)","\(Date().description)","\(Date().description)","\(Date().description)"], arr2: ["xxx", "\("\(Date().description)")"]))
+        alert.addAction(.init(title: "\(MessageTable.self) 保存数据", style: .default, handler: { (_) in
+            WOADB.current?.insert(table: MessageTable.self, id: 0, model: .init(tag: 1, arr: ["\(Date().description)","\(Date().description)","\(Date().description)","\(Date().description)","\(Date().description)"], arr2: ["xxx", "\("\(Date().description)")"]))
         }))
         
-        alert.addAction(.init(title: "\(UserInfoTable1.self) 查询数据", style: .default, handler: { (_) in
-            if let data = WOADB.current?.query(table: UserInfoTable1.self, id: 0) {
+        alert.addAction(.init(title: "\(MessageTable.self) 查询数据", style: .default, handler: { (_) in
+            if let data = WOADB.current?.query(table: MessageTable.self, id: 0) {
                 SVProgressHUD.showSuccess(withStatus: "\(data)")
             } else {
                 SVProgressHUD.showSuccess(withStatus: "没有查询到数据")

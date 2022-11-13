@@ -16,11 +16,13 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6561424B29207C7900DDEF28 /* EasyDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6561424A29207C7900DDEF28 /* EasyDBService.swift */; };
-		65742B6F291FEE0F00F75D88 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65742B6A291FEE0F00F75D88 /* UserInfo.swift */; };
-		65742B70291FEE0F00F75D88 /* UserInfoTable0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65742B6B291FEE0F00F75D88 /* UserInfoTable0.swift */; };
-		65742B71291FEE0F00F75D88 /* UserInfoTable1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65742B6C291FEE0F00F75D88 /* UserInfoTable1.swift */; };
+		65742B70291FEE0F00F75D88 /* UserInfoTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65742B6B291FEE0F00F75D88 /* UserInfoTable.swift */; };
+		65742B71291FEE0F00F75D88 /* MessageTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65742B6C291FEE0F00F75D88 /* MessageTable.swift */; };
 		65742B72291FEE0F00F75D88 /* WOADB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65742B6E291FEE0F00F75D88 /* WOADB.swift */; };
 		65BECB402920A1C800D6D29E /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BECB3F2920A1C800D6D29E /* AccountManager.swift */; };
+		65BECEB52920D0B400D6D29E /* UserInfoTableInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BECEB42920D0B400D6D29E /* UserInfoTableInt64.swift */; };
+		65BECEB72920D0B900D6D29E /* UserInfoTableInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BECEB62920D0B900D6D29E /* UserInfoTableInt.swift */; };
+		65BECEBB2920D0C300D6D29E /* UserInfoTableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BECEBA2920D0C300D6D29E /* UserInfoTableString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,11 +50,13 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6561424A29207C7900DDEF28 /* EasyDBService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasyDBService.swift; sourceTree = "<group>"; };
-		65742B6A291FEE0F00F75D88 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
-		65742B6B291FEE0F00F75D88 /* UserInfoTable0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTable0.swift; sourceTree = "<group>"; };
-		65742B6C291FEE0F00F75D88 /* UserInfoTable1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTable1.swift; sourceTree = "<group>"; };
+		65742B6B291FEE0F00F75D88 /* UserInfoTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoTable.swift; sourceTree = "<group>"; };
+		65742B6C291FEE0F00F75D88 /* MessageTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTable.swift; sourceTree = "<group>"; };
 		65742B6E291FEE0F00F75D88 /* WOADB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOADB.swift; sourceTree = "<group>"; };
 		65BECB3F2920A1C800D6D29E /* AccountManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		65BECEB42920D0B400D6D29E /* UserInfoTableInt64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableInt64.swift; sourceTree = "<group>"; };
+		65BECEB62920D0B900D6D29E /* UserInfoTableInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableInt.swift; sourceTree = "<group>"; };
+		65BECEBA2920D0C300D6D29E /* UserInfoTableString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableString.swift; sourceTree = "<group>"; };
 		8A6CD218CF0F098E5CAE5729 /* Pods-EasyDB_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDB_Example.release.xcconfig"; path = "Target Support Files/Pods-EasyDB_Example/Pods-EasyDB_Example.release.xcconfig"; sourceTree = "<group>"; };
 		8D445590DE65D0F00586B252 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		931A660792765F9728DC5E6D /* Pods-EasyDB_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyDB_Tests.release.xcconfig"; path = "Target Support Files/Pods-EasyDB_Tests/Pods-EasyDB_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,9 +181,11 @@
 		65742B69291FEE0F00F75D88 /* Tables */ = {
 			isa = PBXGroup;
 			children = (
-				65742B6A291FEE0F00F75D88 /* UserInfo.swift */,
-				65742B6B291FEE0F00F75D88 /* UserInfoTable0.swift */,
-				65742B6C291FEE0F00F75D88 /* UserInfoTable1.swift */,
+				65742B6B291FEE0F00F75D88 /* UserInfoTable.swift */,
+				65742B6C291FEE0F00F75D88 /* MessageTable.swift */,
+				65BECEBA2920D0C300D6D29E /* UserInfoTableString.swift */,
+				65BECEB62920D0B900D6D29E /* UserInfoTableInt.swift */,
+				65BECEB42920D0B400D6D29E /* UserInfoTableInt64.swift */,
 			);
 			path = Tables;
 			sourceTree = "<group>";
@@ -378,13 +384,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				65742B6F291FEE0F00F75D88 /* UserInfo.swift in Sources */,
-				65742B70291FEE0F00F75D88 /* UserInfoTable0.swift in Sources */,
+				65742B70291FEE0F00F75D88 /* UserInfoTable.swift in Sources */,
 				6561424B29207C7900DDEF28 /* EasyDBService.swift in Sources */,
-				65742B71291FEE0F00F75D88 /* UserInfoTable1.swift in Sources */,
+				65BECEBB2920D0C300D6D29E /* UserInfoTableString.swift in Sources */,
+				65742B71291FEE0F00F75D88 /* MessageTable.swift in Sources */,
+				65BECEB72920D0B900D6D29E /* UserInfoTableInt.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				65742B72291FEE0F00F75D88 /* WOADB.swift in Sources */,
 				65BECB402920A1C800D6D29E /* AccountManager.swift in Sources */,
+				65BECEB52920D0B400D6D29E /* UserInfoTableInt64.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
