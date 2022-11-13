@@ -25,9 +25,9 @@ class ViewController: UIViewController {
             (1...100).forEach { _ in
                 DispatchQueue.global().async {
                     WOADB.current?.insert(table: UserInfoTable0.self, id: 0, model: .init(id: 0, name: "哈哈\(Date().description)"))
-                    WOADB.current?.insert(table: UserInfoTable2.self, id: 0, model: "\(Date().description)")
-                    WOADB.current?.insert(table: UserInfoTableInt.self, id: 0, model: Int(arc4random()))
-                    WOADB.current?.insert(table: UserInfoTableInt64.self, id: 0, model: Int64(arc4random()))
+                    WOADB.current?.insert(table: UserInfoTable2.self, id: Int64(arc4random()), model: "\(Date().description)")
+                    WOADB.current?.insert(table: UserInfoTableInt.self, id: Int64(arc4random()), model: Int(arc4random()))
+                    WOADB.current?.insert(table: UserInfoTableInt64.self, id: Int64(arc4random()), model: Int64(arc4random()))
                 }
             }
         }))
