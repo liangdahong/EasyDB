@@ -3,7 +3,7 @@ import Foundation
 import FMDB
 import EasyDB
 
-class EasyDBService {
+class DBService {
     
     private let db: FMDatabase
     private let dbQueue: FMDatabaseQueue
@@ -21,7 +21,7 @@ class EasyDBService {
     }
 }
 
-extension EasyDBService {
+extension DBService {
     @discardableResult
     public func dbQueue<Result>(_ work: () throws -> Result) rethrows -> Result {
         var result: Result!
@@ -36,9 +36,9 @@ extension EasyDBService {
     }
 }
 
-extension EasyDBService: EasyDB.EasyDBService {
+extension DBService: EasyDB.DBService {
     
-    func creatTable(_ tables: [EasyTableBase.Type]) {
+    func creatTable(_ tables: [TableBase.Type]) {
         dbQueue {
             tables.forEach {
                 let sql =

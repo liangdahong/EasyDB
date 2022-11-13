@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44B185856C4D2798BAACB205E915DE8D /* EasyDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4E8C4F4A29C349CA91F6C4A22BF45A8 /* EasyDB-dummy.m */; };
+		3D502105E9BED88255C5EC78EB76CB18 /* DBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72527F1D53D6AAD0AD6276386204BAE4 /* DBService.swift */; };
+		4A7C6AB779BA48AF4B1A020149A8128D /* TableCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2053B65E756E59E8085FE85D5425D7F3 /* TableCodable.swift */; };
+		572DC4D0F1DB3CDD9C8D21BF002377E1 /* TableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAF0D1D94F7999F8B9021D8EF8D330D0 /* TableString.swift */; };
 		6D535B1E0A8D4F9B0F6AF13AAA6488E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E50651639C05DC3845D2425547FA4A41 /* Foundation.framework */; };
-		89DB695F5F97961196891EAB43FD2A62 /* EasyDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200D620FBDFB1196F6C8154BDB2C20FC /* EasyDBService.swift */; };
-		A01C44EB16B47D32B7E8FBD98EA03CD4 /* EasyTableInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9116B627D217BC3800793FCC0456C29A /* EasyTableInt.swift */; };
-		A78B20F6999ECA9F00B32BD40FE73DC0 /* EasyTableString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BE6FCADD60B74F5B02658CC5532D7C /* EasyTableString.swift */; };
-		C742C79F914496131E232287778C5B6A /* EasyTableCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B5800AB8729462800854DDB2C85849 /* EasyTableCodable.swift */; };
-		D32E096663D508E2948DD87B459FC64D /* EasyTableInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EABDD3AF569D3D6D6309A73644AB68 /* EasyTableInt64.swift */; };
-		D4398AF2DEA21D9793516A9B6F826F17 /* EasyTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5133D80C1F0552101D9F67FCFCE60458 /* EasyTable.swift */; };
-		E33B42CB632E1D01D3142EF64F22541C /* EasyDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5978A4E50093CBBBB67F85ED1DDB15 /* EasyDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7818A2B1ABE5D80262E04A8ABF10AA74 /* TableInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A01219DB1BAFE35C9F0D05C062DC343 /* TableInt.swift */; };
+		A3A4ADBA91560D03C8C5B326CFE41873 /* TableInt64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C671053F5212567CAF3225A779DD4F9 /* TableInt64.swift */; };
+		E33B42CB632E1D01D3142EF64F22541C /* EasyDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64627F8B496274B0552395CC449E74B3 /* EasyDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5AAD1FA2778CB31F2E8752815B45AFD /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F06EBA1D2A3D6E4143ACA6F8DACE4 /* Table.swift */; };
+		F64F7970F480A5BBE1B01EFC46EBA791 /* EasyDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5FDB77F57E5D02BA28EFF3C41CA393A /* EasyDB-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,25 +29,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0660E04DA25C44E21160BF839690D71B /* EasyDB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EasyDB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		19BE6FCADD60B74F5B02658CC5532D7C /* EasyTableString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTableString.swift; path = EasyDB/Classes/EasyTableString.swift; sourceTree = "<group>"; };
-		200D620FBDFB1196F6C8154BDB2C20FC /* EasyDBService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyDBService.swift; path = EasyDB/Classes/EasyDBService.swift; sourceTree = "<group>"; };
-		3BDDF45B50E7B75460E21A162818D8B1 /* EasyDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyDB-prefix.pch"; sourceTree = "<group>"; };
-		3D7B8228C9597667F53A9646AE3E17BC /* EasyDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyDB-Info.plist"; sourceTree = "<group>"; };
-		5133D80C1F0552101D9F67FCFCE60458 /* EasyTable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTable.swift; path = EasyDB/Classes/EasyTable.swift; sourceTree = "<group>"; };
-		579F7DF00A0883326EA8D718E2CB4882 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		7985D46DD28915B285B3CC9380DE1C33 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		9116B627D217BC3800793FCC0456C29A /* EasyTableInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTableInt.swift; path = EasyDB/Classes/EasyTableInt.swift; sourceTree = "<group>"; };
-		9C5978A4E50093CBBBB67F85ED1DDB15 /* EasyDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyDB-umbrella.h"; sourceTree = "<group>"; };
-		A1B5800AB8729462800854DDB2C85849 /* EasyTableCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTableCodable.swift; path = EasyDB/Classes/EasyTableCodable.swift; sourceTree = "<group>"; };
+		0E5F06EBA1D2A3D6E4143ACA6F8DACE4 /* Table.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Table.swift; path = EasyDB/Classes/Table.swift; sourceTree = "<group>"; };
+		11AFB769895CC8A770421EAB4057BAC8 /* EasyDB-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyDB-Info.plist"; sourceTree = "<group>"; };
+		2053B65E756E59E8085FE85D5425D7F3 /* TableCodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableCodable.swift; path = EasyDB/Classes/TableCodable.swift; sourceTree = "<group>"; };
+		47C4584AEFA2D7F37670700F942584E7 /* EasyDB.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = EasyDB.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4A01219DB1BAFE35C9F0D05C062DC343 /* TableInt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableInt.swift; path = EasyDB/Classes/TableInt.swift; sourceTree = "<group>"; };
+		57795E7EEAE56DCA9E4B6F3DCCAFBE64 /* EasyDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyDB.release.xcconfig; sourceTree = "<group>"; };
+		64627F8B496274B0552395CC449E74B3 /* EasyDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyDB-umbrella.h"; sourceTree = "<group>"; };
+		72527F1D53D6AAD0AD6276386204BAE4 /* DBService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DBService.swift; path = EasyDB/Classes/DBService.swift; sourceTree = "<group>"; };
+		75291C8C008E84A4E350A392C2915923 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		79B65CD4496A1B45DEA2C170017A3C5D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		8C671053F5212567CAF3225A779DD4F9 /* TableInt64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableInt64.swift; path = EasyDB/Classes/TableInt64.swift; sourceTree = "<group>"; };
+		966420940D20F836342986CF56C9E1DC /* EasyDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyDB-prefix.pch"; sourceTree = "<group>"; };
+		A627E246406F074FBBAF7B4094642DDF /* EasyDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyDB.modulemap; sourceTree = "<group>"; };
 		AE10706527CA263A36F449A879A0802B /* FMDB */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FMDB; path = FMDB.xcodeproj; sourceTree = "<group>"; };
-		B4E8C4F4A29C349CA91F6C4A22BF45A8 /* EasyDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyDB-dummy.m"; sourceTree = "<group>"; };
 		CDA3BF9C01F0ED79AB7E811908732060 /* EasyDB */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyDB; path = EasyDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44AF925F4694AB5A7A06D5F09AF33BC /* EasyDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyDB.debug.xcconfig; sourceTree = "<group>"; };
 		E50651639C05DC3845D2425547FA4A41 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E6EABDD3AF569D3D6D6309A73644AB68 /* EasyTableInt64.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTableInt64.swift; path = EasyDB/Classes/EasyTableInt64.swift; sourceTree = "<group>"; };
-		F045FD43926BCBBDF3ADBE3D5A9A6BB2 /* EasyDB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyDB.debug.xcconfig; sourceTree = "<group>"; };
-		FCA71737DC5D53D440E41270F48553B3 /* EasyDB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyDB.release.xcconfig; sourceTree = "<group>"; };
-		FD1121FFE972E1B32C92F28FD098937B /* EasyDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyDB.modulemap; sourceTree = "<group>"; };
+		E5FDB77F57E5D02BA28EFF3C41CA393A /* EasyDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyDB-dummy.m"; sourceTree = "<group>"; };
+		EAF0D1D94F7999F8B9021D8EF8D330D0 /* TableString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TableString.swift; path = EasyDB/Classes/TableString.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,32 +62,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0977DC9D6F846D9574B817F39107B201 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				0660E04DA25C44E21160BF839690D71B /* EasyDB.podspec */,
-				7985D46DD28915B285B3CC9380DE1C33 /* LICENSE */,
-				579F7DF00A0883326EA8D718E2CB4882 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		193723E8F421599775934E200481B9F9 /* EasyDB */ = {
-			isa = PBXGroup;
-			children = (
-				200D620FBDFB1196F6C8154BDB2C20FC /* EasyDBService.swift */,
-				5133D80C1F0552101D9F67FCFCE60458 /* EasyTable.swift */,
-				A1B5800AB8729462800854DDB2C85849 /* EasyTableCodable.swift */,
-				9116B627D217BC3800793FCC0456C29A /* EasyTableInt.swift */,
-				E6EABDD3AF569D3D6D6309A73644AB68 /* EasyTableInt64.swift */,
-				19BE6FCADD60B74F5B02658CC5532D7C /* EasyTableString.swift */,
-				0977DC9D6F846D9574B817F39107B201 /* Pod */,
-				D447B2B3D07F36297F88AF877ACBF04F /* Support Files */,
-			);
-			name = EasyDB;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		1F9EFC4FF5F6379FEF0C0B910AC4AB3F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,26 +94,52 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		885DB23D8C8C8B95CAE10C654B730783 /* EasyDB */ = {
+			isa = PBXGroup;
+			children = (
+				72527F1D53D6AAD0AD6276386204BAE4 /* DBService.swift */,
+				0E5F06EBA1D2A3D6E4143ACA6F8DACE4 /* Table.swift */,
+				2053B65E756E59E8085FE85D5425D7F3 /* TableCodable.swift */,
+				4A01219DB1BAFE35C9F0D05C062DC343 /* TableInt.swift */,
+				8C671053F5212567CAF3225A779DD4F9 /* TableInt64.swift */,
+				EAF0D1D94F7999F8B9021D8EF8D330D0 /* TableString.swift */,
+				914DA2D71CB24DB42E85A6E5ABED002F /* Pod */,
+				F37A3455501FA178F062CACF1BA04325 /* Support Files */,
+			);
+			name = EasyDB;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		914DA2D71CB24DB42E85A6E5ABED002F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				47C4584AEFA2D7F37670700F942584E7 /* EasyDB.podspec */,
+				75291C8C008E84A4E350A392C2915923 /* LICENSE */,
+				79B65CD4496A1B45DEA2C170017A3C5D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		95C76AD4B185331FF7DFCCF18F96F120 = {
 			isa = PBXGroup;
 			children = (
 				3F2840694EBB392119DF3C4FB1383905 /* Dependencies */,
-				193723E8F421599775934E200481B9F9 /* EasyDB */,
+				885DB23D8C8C8B95CAE10C654B730783 /* EasyDB */,
 				5FCDD95E3D268B45DDD83C432DF33654 /* Frameworks */,
 				1F9EFC4FF5F6379FEF0C0B910AC4AB3F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D447B2B3D07F36297F88AF877ACBF04F /* Support Files */ = {
+		F37A3455501FA178F062CACF1BA04325 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FD1121FFE972E1B32C92F28FD098937B /* EasyDB.modulemap */,
-				B4E8C4F4A29C349CA91F6C4A22BF45A8 /* EasyDB-dummy.m */,
-				3D7B8228C9597667F53A9646AE3E17BC /* EasyDB-Info.plist */,
-				3BDDF45B50E7B75460E21A162818D8B1 /* EasyDB-prefix.pch */,
-				9C5978A4E50093CBBBB67F85ED1DDB15 /* EasyDB-umbrella.h */,
-				F045FD43926BCBBDF3ADBE3D5A9A6BB2 /* EasyDB.debug.xcconfig */,
-				FCA71737DC5D53D440E41270F48553B3 /* EasyDB.release.xcconfig */,
+				A627E246406F074FBBAF7B4094642DDF /* EasyDB.modulemap */,
+				E5FDB77F57E5D02BA28EFF3C41CA393A /* EasyDB-dummy.m */,
+				11AFB769895CC8A770421EAB4057BAC8 /* EasyDB-Info.plist */,
+				966420940D20F836342986CF56C9E1DC /* EasyDB-prefix.pch */,
+				64627F8B496274B0552395CC449E74B3 /* EasyDB-umbrella.h */,
+				D44AF925F4694AB5A7A06D5F09AF33BC /* EasyDB.debug.xcconfig */,
+				57795E7EEAE56DCA9E4B6F3DCCAFBE64 /* EasyDB.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/EasyDB";
@@ -164,7 +164,7 @@
 			buildConfigurationList = 4A8449CBC8C631642924BD01F47717DE /* Build configuration list for PBXNativeTarget "EasyDB" */;
 			buildPhases = (
 				D2FDFF19BAE195135827657E7F7B915D /* Headers */,
-				B84414E846E3326C19157B27592EAE52 /* Sources */,
+				B2F7D344BE1F1D9DE53A031D5B5620A4 /* Sources */,
 				2ECF4B4DC68A42C666E085D95111EF01 /* Frameworks */,
 				131759B7D487A02DBBC7F50C64A88951 /* Resources */,
 			);
@@ -221,17 +221,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B84414E846E3326C19157B27592EAE52 /* Sources */ = {
+		B2F7D344BE1F1D9DE53A031D5B5620A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44B185856C4D2798BAACB205E915DE8D /* EasyDB-dummy.m in Sources */,
-				89DB695F5F97961196891EAB43FD2A62 /* EasyDBService.swift in Sources */,
-				D4398AF2DEA21D9793516A9B6F826F17 /* EasyTable.swift in Sources */,
-				C742C79F914496131E232287778C5B6A /* EasyTableCodable.swift in Sources */,
-				A01C44EB16B47D32B7E8FBD98EA03CD4 /* EasyTableInt.swift in Sources */,
-				D32E096663D508E2948DD87B459FC64D /* EasyTableInt64.swift in Sources */,
-				A78B20F6999ECA9F00B32BD40FE73DC0 /* EasyTableString.swift in Sources */,
+				3D502105E9BED88255C5EC78EB76CB18 /* DBService.swift in Sources */,
+				F64F7970F480A5BBE1B01EFC46EBA791 /* EasyDB-dummy.m in Sources */,
+				E5AAD1FA2778CB31F2E8752815B45AFD /* Table.swift in Sources */,
+				4A7C6AB779BA48AF4B1A020149A8128D /* TableCodable.swift in Sources */,
+				7818A2B1ABE5D80262E04A8ABF10AA74 /* TableInt.swift in Sources */,
+				A3A4ADBA91560D03C8C5B326CFE41873 /* TableInt64.swift in Sources */,
+				572DC4D0F1DB3CDD9C8D21BF002377E1 /* TableString.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +310,7 @@
 		};
 		777143955C46E2AA825C6095ED44EC75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FCA71737DC5D53D440E41270F48553B3 /* EasyDB.release.xcconfig */;
+			baseConfigurationReference = 57795E7EEAE56DCA9E4B6F3DCCAFBE64 /* EasyDB.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -343,7 +343,7 @@
 		};
 		89B66C5FEADDB55FBDFA302722E519E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F045FD43926BCBBDF3ADBE3D5A9A6BB2 /* EasyDB.debug.xcconfig */;
+			baseConfigurationReference = D44AF925F4694AB5A7A06D5F09AF33BC /* EasyDB.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;

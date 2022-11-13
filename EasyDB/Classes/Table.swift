@@ -1,14 +1,14 @@
 
 import Foundation
 
-public protocol EasyTableBase {
+public protocol TableBase {
     static var tableName: String { get }
 }
 
-public protocol EasyTableCodable {
+public protocol TableCodable {
     associatedtype Model
     static func encode(_ model: Model) -> String?
     static func decoder(_ string: String) -> Model?
 }
 
-public typealias EasyTable = EasyTableBase & EasyTableCodable
+public typealias EasyTable = TableBase & TableCodable

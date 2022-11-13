@@ -1,7 +1,7 @@
 
 import Foundation
 
-extension EasyTableCodable where Self.Model == String {
+extension TableCodable where Self.Model == String {
     
     public static func encode(_ model: Model) -> String? { model }
     

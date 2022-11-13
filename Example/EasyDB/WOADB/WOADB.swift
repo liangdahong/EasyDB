@@ -6,7 +6,7 @@ final class WOADB {
     
     private struct DBInfo {
         let account: Int64
-        let db: EasyDB.EasyDBService
+        let db: EasyDB.DBService
     }
     
     private init() { }
@@ -15,14 +15,14 @@ final class WOADB {
     
     private static var lock = NSLock()
     
-    static var current: EasyDB.EasyDBService? {
+    static var current: EasyDB.DBService? {
         lock.lock()
         defer { lock.unlock() }
         guard let account = AccountManager.shared.currentAccount else { return nil }
         if let currentDBInfo, currentDBInfo.account == account {
             return currentDBInfo.db
         } else {
-            let db = EasyDBService("\(NSHomeDirectory())/Documents/\(account).db")
+            let db = DBService("\(NSHomeDirectory())/Documents/\(account).db")
             db.creatTable([
                 UserInfoTable.self,
                 MessageTable.self,

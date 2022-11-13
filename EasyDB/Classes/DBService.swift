@@ -1,8 +1,8 @@
 
 import Foundation
 
-public protocol EasyDBService {
-    func creatTable(_ tables: [EasyTableBase.Type])
+public protocol DBService {
+    func creatTable(_ tables: [TableBase.Type])
     func insert<T: EasyTable>(table: T.Type, id: Int64, model: T.Model)
     func query<T: EasyTable>(table: T.Type, id: Int64) -> T.Model?
 }

@@ -1,7 +1,7 @@
 
 import Foundation
 
-extension EasyTableCodable where Self.Model: Codable {
+extension TableCodable where Self.Model: Codable {
     
     public static func encode(_ model: Model) -> String? {
         guard let data = try? JSONEncoder().encode(model) else { return nil }
