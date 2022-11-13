@@ -1,0 +1,14 @@
+use_frameworks!
+
+platform :ios, '11.0'
+install! 'cocoapods', :generate_multiple_pod_projects=>true
+
+target 'EasyDB_Example' do
+  
+  pod 'EasyDB', :path => '../'
+  pod 'SVProgressHUD'
+
+  target 'EasyDB_Tests' do
+    inherit! :search_paths
+  end
+end

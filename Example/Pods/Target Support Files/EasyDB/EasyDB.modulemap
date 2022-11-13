@@ -1,0 +1,6 @@
+framework module EasyDB {
+  umbrella header "EasyDB-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,29 @@
+PODS:
+  - EasyDB (0.1.0):
+    - FMDB
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - EasyDB (from `../`)
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - FMDB
+    - SVProgressHUD
+
+EXTERNAL SOURCES:
+  EasyDB:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyDB: b5102d0fb884ddada3fe713bd293cd87ac8ee133
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 9d804e5d119eb372cb8ecda60d3dd0ad365fe7ef
+
+COCOAPODS: 1.11.3

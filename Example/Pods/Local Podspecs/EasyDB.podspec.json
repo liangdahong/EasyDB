@@ -1,0 +1,27 @@
+{
+  "name": "EasyDB",
+  "version": "0.1.0",
+  "summary": "A short description of EasyDB.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/liangdahong/EasyDB",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "liangdahong": "hi@liangdahong.com"
+  },
+  "source": {
+    "git": "https://github.com/liangdahong/EasyDB.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "EasyDB/Classes/**/*",
+  "dependencies": {
+    "FMDB": [
+
+    ]
+  }
+}
