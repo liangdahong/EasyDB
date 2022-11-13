@@ -9,7 +9,7 @@
 import Foundation
 import EasyDB
 
-struct UserInfoTableInt: EasyTable {
+struct UserInfoTableInt: Table {
     typealias Model = Int
     static var tableName: String { "UserInfoTableInt" }
 }

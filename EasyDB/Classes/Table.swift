@@ -11,4 +11,4 @@ public protocol TableCodable {
     static func decoder(_ string: String) -> Model?
 }
 
-public typealias EasyTable = TableBase & TableCodable
+public typealias Table = TableBase & TableCodable

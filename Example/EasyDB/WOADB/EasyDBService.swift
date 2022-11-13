@@ -58,7 +58,7 @@ extension DBService: EasyDB.DBService {
         }
     }
     
-    func insert<T: EasyTable>(table: T.Type, id: Int64, model: T.Model) {
+    func insert<T: Table>(table: T.Type, id: Int64, model: T.Model) {
         dbQueue {
             guard let data = T.encode(model) else {
                 assertionFailure()
@@ -74,7 +74,7 @@ extension DBService: EasyDB.DBService {
         }
     }
     
-    func query<T: EasyTable>(table: T.Type, id: Int64) -> T.Model? {
+    func query<T: Table>(table: T.Type, id: Int64) -> T.Model? {
         dbQueue {
             let sql = "select * from \(T.tableName) where id=?;"
             do {

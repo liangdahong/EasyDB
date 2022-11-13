@@ -9,7 +9,7 @@
 import Foundation
 import EasyDB
 
-struct UserInfoTableInt64: EasyTable {
+struct UserInfoTableInt64: Table {
     typealias Model = Int64
     static var tableName: String { "UserInfoTableInt64" }
 }
